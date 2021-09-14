@@ -1238,6 +1238,7 @@ namespace std {
 #endif
 
 namespace VKFW_NAMESPACE {
+	using Image = GLFWimage;
 #ifndef VKFW_NO_EXCEPTIONS
 	class ErrorCategoryImpl : public std::error_category {
 	public:
@@ -1663,8 +1664,6 @@ namespace VKFW_NAMESPACE {
 	private:
 		GLFWcursor *m_cursor;
 	};
-
-	using Image = GLFWimage;
 
 	class Window {
 	public:
